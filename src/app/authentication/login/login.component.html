@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Cimfianance</h1>
+                    <h6>Welcome to Mechant Clearing House Archive System!</h6>
+                </div>
+                <form [formGroup]="loginForm" (ngSubmit)="login()">
+                    <div class="mb-3">
+                        <label for="employeeId" class="form-label">EmployeeId</label>
+                        <input formControlName="employeeid" type="employeeId" class="form-control" id="employeeId">
+                    </div>
+
+                    <div class="mb-3">
+                       <label for="password" class="form-label">Password</label> 
+                       <input formControlName="password" type="password" class="form-control" id="password">
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">Login</button>
+                    <a style="color: #fff; margin-top: 10px;" routerLink="/registration">New User? Click to Register!!</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
